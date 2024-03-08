@@ -1,0 +1,47 @@
+body{
+    background-color: mintcream;
+}
+
+h1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: olivedrab;
+}
+
+h3{
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 200;
+    color: rgb(220, 66, 218)
+}
+
+p{
+    font-family: monospace;
+
+}
+.text-pink{
+    color: deeppink;
+}
+
+.text-blue{
+    color: dodgerblue;
+}
+.text-yellow{
+    color: tomato;
+}
+
+li{
+    font-family: monospace;
+    color: black;
+}
+button{
+    background-color: darkseagreen;
+}
+.box{
+    background-color: ;
+    display: flex;
+}
+
+
+
