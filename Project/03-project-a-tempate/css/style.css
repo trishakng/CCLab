@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Rajdhani", sans-serif;
     font-size: 1em;
 }
 
@@ -12,9 +12,10 @@ body {
 }
 
 .headline {
-    font-size: 4em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    text-decoration-line: underline;
+    font-size: 5em;
+    font-family: "Rajdhani", sans-serif;
+    font-style: bold;
 }
 
 /* main content */
@@ -25,15 +26,15 @@ body {
 }
 
 .red {
-    color: coral;
+    color: rgb(187, 248, 65);
 }
 
 .green {
-    color: aquamarine;
+    color: rgb(38, 229, 159);
 }
 
 .yellow {
-    color: gold;
+    color: rgb(235, 69, 23);
 }
 
 
