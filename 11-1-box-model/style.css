@@ -1,0 +1,53 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin:0
+}
+
+body {
+  background-color: beige
+}
+
+.title-box{
+ text-align: center;
+ margin: 20px;
+}
+.nav-bar{
+
+}
+.box {
+  background: burlywood;
+  /* margin */
+  /* margin: all */
+  /* margin: tb rl */
+  /* margin: t r b l */
+  margin: 20px 50px;
+  width: 180px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+#invisible-box{
+  background-color: tomato;
+  visibility: hidden;
+}
+
+#special-box-1{
+  background-color: royalblue;
+  position: relative;
+  left: 100px;
+}
+ 
+#special-box-2{
+  background-color: blueviolet;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
