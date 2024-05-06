@@ -1,5 +1,7 @@
 body{
     background-color: whitesmoke;
+    background: url("../assets/paper.png");
+
 }
 .image-1 {
    width: 700px;

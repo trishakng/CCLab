@@ -1,0 +1,69 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(65, 191, 210);
+    margin: 0;
+}
+
+.image-1 {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    align-items: stretch;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title-box {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    gap: 400px;
+}
+
+#p5-canvas-container {
+    /* background-color: aqua; */
+
+    width: 1000px;
+    margin: auto;
+    /* height: 500px; */
+
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background: #d5c516;
+    border-color: black;
+}
+
+button:hover {
+    background: #e2922f;
+}

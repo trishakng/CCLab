@@ -3,6 +3,8 @@ let img1;
 let img2;
 let img3;
 let img4;
+let bg;
+let snd;
 
 
 function preload() {
@@ -10,6 +12,8 @@ function preload() {
   img3 = loadImage("assets/misc4.png");
   img4 = loadImage("assets/misc5.png");
   img = loadImage("assets/misc1.png");
+  bg = loadImage("assets/bg.png");
+  snd = loadSound("assets/click.mov");
 
 
 }
@@ -26,7 +30,8 @@ function setup() {
 let t = 0;
 
 function draw() {
-  background((245, 245, 245));
+  // background((245, 245, 245));
+  background(bg);
   image(img1, 900, 50);
   image(img3, 600, 0);
   image(img4, 200, 250);
@@ -46,10 +51,11 @@ function draw() {
   fill(c);
   square(10, 10, 100);
 
-  text('龙 museum', 200, 200);
+  text('龙 museum on west bund', 160, 200);
   textSize(20)
   text('modern art musuem pudong', 270, 520);
-  text('富民路', 700, 200);
+  text('people along 富民路', 700, 200);
+  text('xu bing: gravitational arena', 970, 500);
 
 
   if (mouseX < 200 && mouseX > 150 && mouseY < 200 && mouseY > 150) {
@@ -59,4 +65,12 @@ function draw() {
   }
 
 
+}
+
+function linkWithSound(link) {
+  snd.play();
+  // anonymous function
+  setTimeout(function () {
+      window.open(link, "_self");
+  }, 750);
 }

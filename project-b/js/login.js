@@ -20,4 +20,3 @@ function linkWithSound(link) {
         window.open(link, "_self");
     }, 750);
 }
-

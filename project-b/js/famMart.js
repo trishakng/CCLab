@@ -3,15 +3,20 @@ let img1;
 let img2;
 let famSound;
 let rx = 1200;
-let ry = 100;
-let rw = 100;
-let rh = 100;
+let ry = 80;
+let rw = 150;
+let rh = 70;
+let bg;
+let y = 0;
+let snd;
 
 function preload() {
   img = loadImage("assets/fammart1.png");
   img1 = loadImage("assets/fammart2.png");
   img2 = loadImage("assets/fammart3.png");
-  famSound = loadSound("assets/Fammart.mp3");
+  famSound = loadSound("assets/fammart.m4a");
+  bg = loadImage("assets/familymart.jpeg");
+  snd = loadSound("assets/click.mov");
 }
 
 
@@ -23,24 +28,28 @@ function setup() {
 
 function draw() {
   background((245, 245, 245));
-  image(img, 350, 0);
-  image(img1, 200, 210);
-  image(img2, 900, 30);
-
-
-
 
 
   if (mouseIsPressed) {
     if (mouseX > rx && mouseX < rx + rw &&
       mouseY > ry && mouseY < ry + rh) {
-      fill(255, 120, 255)
+      strokeWeight(2);
+      stroke(0, 100, 0);
+      fill(154, 205, 50);
+      background(bg);
+      image(img, 350, 0);
+      image(img1, 200, 210);
+      image(img2, 900, 30);
     }
   } else {
-    fill(100, 20, 100);
+    stroke(154, 205, 50)
+    fill(0, 100, 0);
   }
 
-  rect(rx, ry, rw, rh);
+  rect(rx, ry, rw, rh, 10);
+  fill(255);
+  textSize(20);
+  text('enter', 1250, 120);
 
 
   // for (let i = 0; i < 50; i++) {
@@ -73,4 +82,12 @@ function mousePressed() {
     mouseY > ry && mouseY < ry + rh) {
     famSound.play();
   }
+}
+
+function linkWithSound(link) {
+  snd.play();
+  // anonymous function
+  setTimeout(function () {
+      window.open(link, "_self");
+  }, 750);
 }

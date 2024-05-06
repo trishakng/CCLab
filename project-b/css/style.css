@@ -1,14 +1,16 @@
 h1 {
   font-family: "Dawning of a New Day", cursive;
   font-weight: 400;
+  color: rgb(36, 37, 37);
   font-size: 50px;
   font-style: normal;
 }
 
 
-/* body{
-  background-image: url("assets/bg.png");
-} */
+body {
+  background-color: black;
+  background: url("../assets/paper.png");
+}
 
 p {
   font-family: "DotGothic16", sans-serif;
@@ -17,7 +19,7 @@ p {
 }
 
 a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -65,8 +67,8 @@ a:hover {
 }
 
 .folder-image-300 {
-  width: 300px;
-  height: 250px;
+  width: 320px;
+  height: 260px;
 }
 
 .small {
@@ -90,14 +92,12 @@ a:hover {
   font-size: large;
 }
 
-img:hover {
-  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.425); */
-}
 
 
 #folder-1 {
   position: relative;
-  left: 300px;
+  left: 200px;
+  top: 30px;
   text-align: center;
 
 }
@@ -125,4 +125,10 @@ img:hover {
   position: absolute;
   left: 30px;
   bottom: 40px;
+}
+
+#folder-6 {
+  position: absolute;
+  left: 650px;
+  top: 0px;
 }

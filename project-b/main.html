@@ -20,10 +20,7 @@
     rel="stylesheet">
 
   <script src="js/lib/p5.js"></script>
-  <!-- Uncomment the line below if you use audio. -->
   <script src="js/lib/p5.sound.js"></script>
-  <script src="js/floor.js"></script>
-
 </head>
 
 <body>
@@ -32,39 +29,46 @@
     <h1>Memories in Shanghai</h1>
   </div>
 
-  <div class="box" id="folder-1" onClick="playSound()">
-    <a href="famMart.html">
+  <div class="box" id="folder-1" onClick='linkWithSound("famMart.html")'>
+    <a>
       <img class="folder-image-200" src="assets/folder1.png" alt="folder1">
       <p class="medium">3am Familymart Run</p>
     </a>
   </div>
 
-  <div class="box" id="folder-2">
-    <a href="dormlife.html">
+  <div class="box" id="folder-2" onClick='linkWithSound("dormlife.html")'>
+    <a>
       <img class="folder-image-100" src="assets/folder2.png" alt="folder1">
       <p class="small">Dorm Life</p>
     </a>
   </div>
 
-  <div class="box" id="folder-3">
-    <a href="dog.html">
+  <div class="box" id="folder-3" onClick='linkWithSound("new.html")'>
+    <a>
       <img class="folder-image-300" src="assets/folder3.png" alt="folder1">
-      <p class="large">Dog watching in Dog Park</p>
+      <p class="large">New Memories (Open me)</p>
     </a>
   </div>
 
-  <div class="box" id="folder-4">
-    <a href="yoghurt.html">
+  <div class="box" id="folder-4" onClick='linkWithSound("yoghurt.html")'>
+    <a>
       <img class="folder-image-100" src="assets/folder4.png" alt="folder1">
       <p class="small">Frozen Yoghurt on 永康路</p>
     </a>
 
   </div>
 
-  <div class="box" id="folder-5">
-    <a href="misc.html">
+  <div class="box" id="folder-5" onClick='linkWithSound("misc.html")'>
+    <a>
       <img class="folder-image-200" src="assets/folder5.png" alt="folder1">
       <p class="medium">Miscellaneous..</p>
+    </a>
+  </div>
+
+  <div class="box" id="folder-6" onClick='linkWithSound("dog.html")'>
+    <a>
+      <img class="folder-image-200" src="assets/folder6.png" alt="folder1">
+      <p class="medium">Dog watching in Dog Park</p>
     </a>
   </div>
 

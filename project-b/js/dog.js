@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background((245, 245, 245));
+  background(218, 165, 32);
   image(img, 550, 0);
   image(img1, 80, 10);
   image(img2, 1100, 100);
@@ -46,4 +46,3 @@ function draw() {
 }
 
 //    image(cam, 0, 0);
-
